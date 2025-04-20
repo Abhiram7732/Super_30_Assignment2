@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Question 5</title>
+  <style>
+    /* Reset & base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at center, #0a0a0a, #000);
+      color: #e0e0e0;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #ff3c38;
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 2.5rem;
+      text-shadow: 0 0 12px #ff3c38;
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { text-shadow: 0 0 10px #ff3c38; }
+      50% { text-shadow: 0 0 20px #ff3c38, 0 0 30px #ff3c38; }
+    }
+
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #1a1a1a;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 60, 56, 0.08);
+    }
+
+    .list-title {
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #ff6b6b;
+      border-left: 6px solid #ff3c38;
+      padding-left: 12px;
+      margin-top: 2.5rem;
+    }
+
+    ol, ul, dl {
+      margin-bottom: 2rem;
+      padding-left: 1.5rem;
+    }
+
+    ol li {
+      margin-bottom: 0.6rem;
+      position: relative;
+      counter-increment: item;
+      list-style: none;
+    }
+
+    ol li::before {
+      content: counter(item) ". ";
+      position: absolute;
+      left: -1.5rem;
+      color: #ff3c38;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style-type: square;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    dl dt {
+      font-weight: bold;
+      color: #ffb84d;
+      margin-top: 1rem;
+    }
+
+    dl dd {
+      margin-left: 1rem;
+      color: #cfcfcf;
+    }
+
+
+    ol li, ul li, dl dt {
+      transition: transform 0.2s ease;
+    }
+
+    ol li:hover, ul li:hover, dl dt:hover {
+      transform: translateX(5px);
+      color: #ff9999;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>🎮 Top 5 Creepy Games</h1>
+
+  <section>
+    <div class="list-title">Ranked Favorites</div>
+    <ol>
+      <li>Resident Evil 7</li>
+      <li>Hello Neighbor</li>
+      <li>Visage</li>
+      <li>Detroit: Become Human</li>
+      <li>Five Nights at Freddy's</li>
+    </ol>
+
+    <div class="list-title">Creepy Game Facts</div>
+    <ul>
+      <li>Perfect for late-night horror sessions</li>
+      <li>Each game has a unique vibe</li>
+      <li>Story-driven or jump-scare based</li>
+    </ul>
+
+    <div class="list-title">Game Descriptions</div>
+    <dl>
+      <dt>Resident Evil 7</dt>
+      <dd>A creepy first-person survival horror game that throws you into a deranged family’s home.</dd>
+
+      <dt>Hello Neighbor</dt>
+      <dd>Stealth-based game where you sneak into a suspicious neighbor’s house to uncover secrets.</dd>
+
+      <dt>Visage</dt>
+      <dd>A psychological horror game that makes every hallway terrifying. Inspired by P.T.</dd>
+
+      <dt>Detroit: Become Human</dt>
+      <dd>An intense interactive story about androids becoming sentient in a broken future.</dd>
+
+      <dt>Five Nights at Freddy's</dt>
+      <dd>Survive nights in a haunted pizzeria — animatronics come alive when the lights go out.</dd>
+    </dl>
+  </section>
+
+</body>
+</html>

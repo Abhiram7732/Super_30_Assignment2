@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 6</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+    }
+
+    thead {
+      background: #1e1e1e;
+      color: #0ff;
+      text-shadow: 0 0 5px #0ff;
+    }
+
+    tfoot {
+      background: #1a1a1a;
+      color: #aaa;
+      font-style: italic;
+    }
+
+    th, td {
+      padding: 14px;
+      border: 1px solid #333;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    td.break, td.lunch {
+      background-color: #292929;
+      font-style: italic;
+      font-weight: normal;
+      color: #bbb;
+    }
+
+    .subject {
+      color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    }
+
+    .AI { background-color: #00ffff; color: #000; box-shadow: 0 0 10px #00ffff; }
+    .PQT { background-color: #ff00ff; box-shadow: 0 0 10px #ff00ff; }
+    .DBMS { background-color: #ff6f61; box-shadow: 0 0 10px #ff6f61; }
+    .DAA { background-color: #00e676; box-shadow: 0 0 10px #00e676; }
+    .JAVA { background-color: #7c4dff; box-shadow: 0 0 10px #7c4dff; }
+    .SE { background-color: #ffd54f; color: #000; box-shadow: 0 0 10px #ffd54f; }
+    .UHV { background-color: #ff4081; box-shadow: 0 0 10px #ff4081; }
+    .LIB { background-color: #757575; box-shadow: 0 0 10px #aaa; }
+  </style>
+</head>
+<body>
+
+  <h1>🌌 Timetable</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>8:00 - 8:50</td>
+        <td class="subject AI">AI</td>
+        <td class="subject JAVA">JAVA</td>
+        <td class="subject PQT">PQT</td>
+        <td class="subject DAA">DAA</td>
+        <td class="subject DBMS">DBMS</td>
+      </tr>
+      <tr>
+        <td>8:50 - 9:40</td>
+        <td class="subject JAVA">JAVA</td>
+        <td class="subject AI">AI</td>
+        <td class="subject SE">SE</td>
+        <td class="subject UHV">UHV</td>
+        <td class="subject LIB">Library</td>
+      </tr>
+      <tr>
+        <td>9:40 - 10:00</td>
+        <td colspan="5" class="break">☕ Break Time</td>
+      </tr>
+      <tr>
+        <td>10:00 - 10:50</td>
+        <td class="subject PQT">PQT</td>
+        <td class="subject SE">SE</td>
+        <td class="subject DBMS">DBMS</td>
+        <td class="subject AI">AI</td>
+        <td class="subject DAA">DAA</td>
+      </tr>
+      <tr>
+        <td>10:50 - 11:40</td>
+        <td class="subject DBMS">DBMS</td>
+        <td class="subject PQT">PQT</td>
+        <td class="subject JAVA">JAVA</td>
+        <td class="subject SE">SE</td>
+        <td class="subject AI">AI</td>
+      </tr>
+      <tr>
+        <td>11:40 - 12:30</td>
+        <td colspan="5" class="lunch">🍔 Lunch Break</td>
+      </tr>
+      <tr>
+        <td>12:30 - 1:15</td>
+        <td class="subject DAA">DAA</td>
+        <td class="subject DBMS">DBMS</td>
+        <td class="subject UHV">UHV</td>
+        <td class="subject PQT">PQT</td>
+        <td class="subject SE">SE</td>
+      </tr>
+      <tr>
+        <td>1:15 - 2:00</td>
+        <td class="subject SE">SE</td>
+        <td class="subject UHV">UHV</td>
+        <td class="subject JAVA">JAVA</td>
+        <td class="subject LIB">Library</td>
+        <td class="subject PQT">PQT</td>
+      </tr>
+      <tr>
+        <td>2:00 - 2:45</td>
+        <td class="subject UHV">UHV</td>
+        <td class="subject DAA">DAA</td>
+        <td class="subject AI">AI</td>
+        <td class="subject DBMS">DBMS</td>
+        <td class="subject JAVA">JAVA</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="6">✨ Stay glowing, even when you're half asleep in class 💫</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
+

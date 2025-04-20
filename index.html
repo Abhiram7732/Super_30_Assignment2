@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhiram's Solutions Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #0078D4, #f9f9f9);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            background: #0078D4;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .header p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .card iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+        .card button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            font-size: 1rem;
+            background-color: #0078D4;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .card button:hover {
+            background-color: #0056a3;
+        }
+        footer {
+            margin-top: 20px;
+            background-color: #0078D4;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Solutions Gallery</h1>
+        <p>Browse through the preview of all solutions and access the full versions.</p>
+    </header>
+    <section class="gallery">
+        <!-- Embed all 19 solutions with buttons -->
+        <div class="card">
+            <iframe src="ques1.html"></iframe>
+            <h3>Question 1 Solution</h3>
+            <button onclick="window.open('ques1.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques2.html"></iframe>
+            <h3>Question 2 Solution</h3>
+            <button onclick="window.open('ques2.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques3.html"></iframe>
+            <h3>Question 3 Solution</h3>
+            <button onclick="window.open('ques3.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques4.html"></iframe>
+            <h3>Question 4 Solution</h3>
+            <button onclick="window.open('ques4.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques5.html"></iframe>
+            <h3>Question 5 Solution</h3>
+            <button onclick="window.open('ques5.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques6.html"></iframe>
+            <h3>Question 6 Solution</h3>
+            <button onclick="window.open('ques6.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques7.html"></iframe>
+            <h3>Question 7 Solution</h3>
+            <button onclick="window.open('ques7.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques8.html"></iframe>
+            <h3>Question 8 Solution</h3>
+            <button onclick="window.open('ques8.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques9.html"></iframe>
+            <h3>Question 9 Solution</h3>
+            <button onclick="window.open('ques9.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques10.html"></iframe>
+            <h3>Question 10 Solution</h3>
+            <button onclick="window.open('ques10.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques11.html"></iframe>
+            <h3>Question 11 Solution</h3>
+            <button onclick="window.open('ques11.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques12.html"></iframe>
+            <h3>Question 12 Solution</h3>
+            <button onclick="window.open('ques12.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques13.html"></iframe>
+            <h3>Question 13 Solution</h3>
+            <button onclick="window.open('ques13.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques14.html"></iframe>
+            <h3>Question 14 Solution</h3>
+            <button onclick="window.open('ques14.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques15.html"></iframe>
+            <h3>Question 15 Solution</h3>
+            <button onclick="window.open('ques15.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques16.html"></iframe>
+            <h3>Question 16 Solution</h3>
+            <button onclick="window.open('ques16.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques17.html"></iframe>
+            <h3>Question 17 Solution</h3>
+            <button onclick="window.open('ques17.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques18.html"></iframe>
+            <h3>Question 18 Solution</h3>
+            <button onclick="window.open('ques18.html', '_blank')">Open Full Solution</button>
+        </div>
+        <div class="card">
+            <iframe src="ques19.html"></iframe>
+            <h3>Question 19 Solution</h3>
+            <button onclick="window.open('ques19.html', '_blank')">Open Full Solution</button>
+        </div>
+    </section>
+    <footer>
+        Super 30 Assignment
+    </footer>
+</body>
+</html>
+

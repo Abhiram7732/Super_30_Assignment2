@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 16</title>
+    <style>
+      
+        .card-section-px {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .card-px {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+     
+        html {
+            font-size: 16px;
+        }
+        .card-section-rem {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            padding: 1.25rem;
+            background-color: #f9f9f9;
+        }
+        .card-rem {
+            width: 18.75rem; 
+            padding: 1.25rem;
+            border: 0.0625rem solid #ccc; 
+            border-radius: 0.5rem;
+            background-color: #fff;
+            box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Shadow */
+        }
+
+        /* Responsive styles for both */
+        @media (max-width: 768px) {
+            .card-px, .card-rem {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Question 16</h1>
+
+    <h2>Using px Measurements</h2>
+    <div class="card-section-px">
+        <div class="card-px">Card 1</div>
+        <div class="card-px">Card 2</div>
+        <div class="card-px">Card 3</div>
+    </div>
+
+    <h2>Using rem Measurements</h2>
+    <div class="card-section-rem">
+        <div class="card-rem">Card 1</div>
+        <div class="card-rem">Card 2</div>
+        <div class="card-rem">Card 3</div>
+    </div>
+</body>
+</html>

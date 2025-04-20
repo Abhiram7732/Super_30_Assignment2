@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 11</title>
+  <style>
+    /* Base Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    .sidebar {
+      background-color: #f4f4f4;
+      padding: 1rem;
+      width: 25%;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-content {
+      padding: 1rem;
+      flex: 1;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      
+      .sidebar {
+        width: 100%;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+   Question 11 : My Responsive Webpage
+  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <h2>Main Content</h2>
+      <p>Welcome to the main content section of this responsive webpage. Resize the browser window to see how it adapts!</p>
+    </main>
+  </div>
+  <footer>
+    Crafted with 💻 and ☕. All rights reserved © 2025.
+  </footer>
+</body>
+</html>

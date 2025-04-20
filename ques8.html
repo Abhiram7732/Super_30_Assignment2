@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 8</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    .form-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .radio-group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .radio-group label {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .radio-group input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Sign Up</h1>
+    <form action="#" method="POST">
+      <!-- Name Field -->
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+      <!-- Email Field with Email validation -->
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address">
+
+      <!-- Password Field with Password Strength validation -->
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required placeholder="Enter your password" minlength="8" pattern=".*[A-Za-z].*" pattern=".*[0-9].*" title="Password must be at least 8 characters long and contain both letters and numbers">
+
+      <!-- Subscription Plan -->
+      <label>Choose a Subscription Plan</label>
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="subscription" value="basic" required> Basic Plan
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="premium" required> Premium Plan
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">Sign Up</button>
+    </form>
+  </div>
+
+</body>
+</html>

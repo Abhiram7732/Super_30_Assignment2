@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 10</title>
+  <style>
+    body {
+      background-color: #002E5D; /* Midnight Blue */
+      color: #FFFFFF;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00FFFF; /* Neon Cyan */
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 10px #00ffff88;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid #00ffff33;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ffff88;
+      border-color: #00FFFF;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Question 10: Photo Gallery</h1>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/id/10/800/800" alt="Forest Pathway">
+    <img src="https://picsum.photos/id/11/800/800" alt="Urban Geometry">
+    <img src="https://picsum.photos/id/12/800/800" alt="Coastal View">
+    <img src="https://picsum.photos/id/13/800/800" alt="Alpine Peaks">
+    <img src="https://picsum.photos/id/14/800/800" alt="Dunes at Dusk">
+    <img src="https://picsum.photos/id/15/800/800" alt="Cascade Waterfall">
+    <img src="https://picsum.photos/id/16/800/800" alt="Metropolis Cityscape">
+    <img src="https://picsum.photos/id/17/800/800" alt="Golden Harvest Fields">
+    <img src="https://picsum.photos/id/18/800/800" alt="Still Waters Lake">
+    <img src="https://picsum.photos/id/19/800/800" alt="Sunset Horizon">
+  </div>
+
+</body>
+</html>
